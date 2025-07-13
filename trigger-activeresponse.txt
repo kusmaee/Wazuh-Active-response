@@ -1,0 +1,15 @@
+<ossec_config>
+  <command>
+    <name>remove-threat</name>
+    <executable>remove-threat.sh</executable>
+    <executable>remove-threat.exe</executable>
+    <timeout_allowed>no</timeout_allowed>
+  </command>
+
+  <active-response>
+    <disabled>no</disabled>
+    <command>remove-threat</command>
+    <location>local</location>
+    <rules_id>87105</rules_id>
+  </active-response>
+</ossec_config>
